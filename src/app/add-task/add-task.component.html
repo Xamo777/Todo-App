@@ -1,0 +1,50 @@
+<div class="container Acceil">
+  <div class="header">
+    <h1 class="title">welcome to Todo App</h1>
+    <p>Please insert your first task in the form down Bellow</p>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-6"></div>
+    <div class="col-lg-6"></div>
+  </div>
+</div>
+<div class="main-container">
+  <div class="overlay"></div>
+  <div class="form-container">
+    <div class="form">
+      <div class="form-group ct">
+        <label for="name">Task Name</label>
+        <span class="inp-ct">
+          <input
+            type="text"
+            class="form-control name-inp"
+            [(ngModel)]="taskName"
+          />
+          <span class="icon"
+            ><i class="pi pi-star" style="font-size: 1.8rem; color: #fff"></i
+          ></span>
+        </span>
+      </div>
+      <div class="form-group ct">
+        <label for="date">Task Date</label>
+        <p-calendar
+          [(ngModel)]="taskDate"
+          dateFormat="dd/mm/yy"
+          [showIcon]="true"
+          class="w-full"
+        ></p-calendar>
+        
+      </div>
+      <div class="btn-ctr">
+        <p-button
+          label="Add"
+          icon="pi pi-plus"
+          iconPos="left"
+          styleClass="add-btn"
+          (onClick)="onAddTask()"
+        ></p-button>
+      </div>
+    </div>
+  </div>
+</div>

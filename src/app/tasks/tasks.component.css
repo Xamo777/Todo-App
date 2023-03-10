@@ -1,0 +1,152 @@
+.main-container {
+  /* width: 110rem !important; */
+  display: flex;
+  margin-top: 6.2rem;
+  background-color: #217240b6;
+}
+.title {
+  font-size: 6.2rem;
+  color: #fff;
+  font-weight: 700;
+}
+.add-task-ctr {
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+::ng-deep .p-picklist-filter .filter-container {
+  display: flex !important;
+  align-items: center !important ;
+
+  width: 20rem !important;
+  background-color: red !important;
+}
+::ng-deep .p-picklist .p-picklist-list .p-picklist-item.p-highlight {
+  background-color: #02953b !important;
+}
+
+::ng-deep .search-input {
+  /* margin-right: 0.6rem !important; */
+  border: none !important;
+  width: 20rem !important;
+  font-size: 1.4rem !important;
+}
+::ng-deep .search-input:focus {
+  box-shadow: none !important;
+}
+::ng-deep .p-picklist-header {
+  background-color: #03c04a !important;
+  color: #fff !important;
+}
+::ng-deep
+  .p-picklist
+  .p-picklist-list:not(.cdk-drop-list-dragging)
+  .p-picklist-item:not(.p-highlight) {
+  background-color: #2fe274;
+  margin-bottom: 1.2rem;
+}
+
+::ng-deep
+  .p-picklist
+  .p-picklist-list:not(.cdk-drop-list-dragging)
+  .p-picklist-item:not(.p-highlight):hover {
+  background-color: #7ce8a6;
+}
+
+.task-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title-container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 2.2rem;
+  margin-bottom: 1rem;
+}
+.task-title {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.task-name,
+.task-date {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #fff;
+  margin: 0;
+}
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+::ng-deep .p-picklist .p-picklist-buttons .p-button {
+  padding: 2.2rem 2.4rem;
+}
+::ng-deep .p-picklist .p-picklist-buttons .p-button > span {
+  font-size: 2.2rem !important;
+}
+::ng-deep .p-picklist .p-picklist-buttons .p-button {
+  padding: 2.2rem 2.4rem;
+}
+::ng-deep .p {
+  font-size: 2.2rem !important;
+}
+.save-btn-ctr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.save-btn {
+  background-color: #3b82f6 !important;
+}
+.task-actions-container {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+::ng-deep .p-picklist-list {
+  overflow: scroll !important;
+  height: 10rem;
+}
+/*add*/
+.add-task-title {
+  color: #333;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.form-container {
+  width: 30rem;
+  align-self: center;
+  background-color: #fff;
+  padding: 2.2rem;
+
+  border-radius: 8px;
+}
+.inp {
+  font-size: 1.4rem;
+  border: 1px solid #2fe274 !important;
+}
+.inp:focus {
+  box-shadow: none !important;
+}
+.label {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.add {
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .main-container {
+    margin-top: 0;
+  }
+}

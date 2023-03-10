@@ -1,0 +1,85 @@
+.Acceil {
+  background-color: #217240b6;
+}
+.main-container {
+  position: relative;
+}
+.overlay {
+  background-color: #00000086;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.form-container {
+  width: 50rem;
+  top: 5rem;
+  background-color: #fff;
+  padding: 2.2rem;
+  z-index: 999;
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 8px;
+}
+.ct {
+  display: flex;
+  flex-direction: column;
+}
+.inp-ct {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d9d5d5;
+  border-radius: 8px;
+  background-color: transparent;
+
+  color: #03ae44;
+  background-color: #14b8a6;
+  border-radius: 12px 8px 8px 12px;
+}
+.icon {
+  margin: 0 auto;
+  margin: 0 0.6rem;
+}
+.name-inp {
+  border: 1px solid #14b8a6 !important;
+  font-size: 2.2rem;
+  color: #03ae44;
+  width: 96%;
+  border-radius: 8px 0 0 8px;
+}
+.name-inp:focus,
+.date:focus {
+  box-shadow: none !important;
+}
+label {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.btn-ctr {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+::ng-deep p-calendar > span {
+  width: 100% !important;
+  font-size: 2.2rem !important;
+}
+::ng-deep .p-inputtext {
+  font-size: 2.2rem !important;
+  color: #03ae44 !important;
+  border: 1px solid #14b8a6 !important;
+}
+::ng-deep .p-inputtext:focus {
+  box-shadow: none !important;
+}
+::ng-deep button > span {
+  font-size: 1.8rem !important;
+}

@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+body {
+  width: 100%;
+  background: url("assets/background.jpg");
+  object-fit: cover;
+  font-family: "Roboto", sans-serif;
+}
+*::-webkit-scrollbar {
+  display: none !important;
+}
+
+@media only screen and (max-width: 76.8em) {
+  html {
+    font-size: 9px;
+  }
+}
